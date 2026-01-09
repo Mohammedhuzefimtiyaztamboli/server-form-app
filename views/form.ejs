@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Form</title>
+  <style>
+    body { font-family: Arial; background:#f4f4f4; }
+    .box {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      text-align: center;
+    }
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button {
+      background: #ff6f91;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>User Form</h2>
+    <form method="POST" action="/submit">
+      <input type="text" name="name" placeholder="Enter Name" required>
+      <input type="email" name="email" placeholder="Enter Email" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
